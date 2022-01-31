@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'car-rental-app';
+
+  titleString = "Test Passing Data"
+  viewString = false;
+
+  currentString(value: boolean) {
+    this.viewString = value;
+  }
 }

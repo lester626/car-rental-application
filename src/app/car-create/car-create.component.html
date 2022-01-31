@@ -1,0 +1,33 @@
+<h1>Add Car</h1>
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>Brand</label>
+        <input type="text" id="brand" class="form-control" [(ngModel)]="car!.brand" name="brand" >
+    </div>
+    <div class="form-group">
+        <label>Model</label>
+        <input type="text" id="model" class="form-control" [(ngModel)]="car!.model" name="model" >
+    </div>
+    <div class="form-group">
+        <label>Body Type</label>
+        <input type="text" id="bodyType" class="form-control" [(ngModel)]="car!.bodyType" name="bodyType" >
+    </div>
+    <div class="form-group">
+        <label>Year</label>
+        <input type="number" id="carYear" class="form-control" [(ngModel)]="car!.carYear" name="carYear" >
+    </div>
+    <div class="form-group">
+        <label>Colour</label>
+        <input type="text" id="colour" class="form-control" [(ngModel)]="car!.colour" name="colour" >
+    </div>
+    <div class="form-group">
+        <label>Mileage</label>
+        <input type="number" id="mileage" class="form-control" [(ngModel)]="car!.mileage" name="mileage" >
+    </div>
+    <div class="form-group">
+        <label>Amount</label>
+        <input type="number" id="amount" class="form-control" [(ngModel)]="car!.amount" name="amount" >
+    </div>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+</form>

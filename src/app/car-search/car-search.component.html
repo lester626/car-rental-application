@@ -1,0 +1,60 @@
+<div class="container">
+    <h1>Car Details</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    <label>Brand: </label>
+                    <input id="brand" [(ngModel)]="car!.brand" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label>Model: </label>
+                    <input id="model" [(ngModel)]="car!.model" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label>Body Type: </label>
+                    <input id="bodyType" [(ngModel)]="car!.bodyType" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label>Year: </label>
+                    <input id="carYear" [(ngModel)]="car!.carYear" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label>Colour: </label>
+                    <input id="colour" [(ngModel)]="car!.colour" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label>Mileage: </label>
+                    <input id="mileage" [(ngModel)]="car!.mileage" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label>Status: </label>
+                    <input id="carStatus" [(ngModel)]="car!.carStatus" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label>Amount: </label>
+                    <input id="model" [(ngModel)]="car!.amount" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button (click)="goBack()" class="btn btn-primary">Back</button>
+                </th>
+            </tr>
+        </thead>
+    </table>
+</div>

@@ -1,0 +1,8 @@
+#model {
+    color: blue;
+}
+
+#model:hover {
+    color: grey;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+<h1>Car List</h1>
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> {{messageAlert}}
+    <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let car of cars">
+            <td>{{car.brand}}</td>
+            <td><a (click)="getCar(car.car_id)" id="model">{{car.model}}</a></td>
+            <td>
+                <button (click)="updateCar(car.car_id)" class="btn btn-info" style="margin-right: 5px;">Update</button>
+                <button (click)="deleteCar(car.car_id)" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
